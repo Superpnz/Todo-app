@@ -11,7 +11,6 @@ addTodoBtn.addEventListener("click", () => {
     if (input.value.trim()) {
         todoList.push(input.value);
         input.value = "";
-        container.innerHTML = "";
 
         saveToLocalStorage();
         render();
